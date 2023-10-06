@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Caveat&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+     
+     .container {
+            padding: 20px;
+            background-color: yellow;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .p {
+            font-family: 'Caveat', cursive;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+        .details {
+            margin-top: 10px;
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: red;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            border: 0;
+            margin: 20px auto;
+            display: block;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .trip-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             }
+            .p {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div><img src="./map.png" alt="location-image" style="max-width: 100%;" height="auto"></div>
+    <div class="container">
+        <div class="trip-info">
+            <div class="details">
+                <p class="p">Agege to Oshodi 🚗<p>
+                <p class="p">13 minutes left</p>
+            </div>
+        </div>
+        <div class="pause">
+            <button>Pause Trip</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
